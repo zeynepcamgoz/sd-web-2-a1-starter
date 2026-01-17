@@ -7,26 +7,25 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 5;
-  color: #FFC0CB;
+  color: #62022f;
   background-color: #f4f5f5;
   padding: 10px;
 }
 
 /* Header styles */
 header {
-  background: linear-gradient(134deg, #FFC0CB 0%, #fb8498 100%);
+  background: linear-gradient(134deg, #f68caa 0%, #ac2456 100%);
   color: white;
-  padding: 1rem;
+  padding: 10px;
   border-radius: 7px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   text-align: center;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header {
   font-size: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 10px;
   font-weight: 299;
 }
 
@@ -44,39 +43,41 @@ main {
 /* Section styles */
 section {
   background: rgb(154, 147, 147);
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  margin-bottom: 10px;
+  padding: 10px;
   border-radius: 7px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-  border-left: 6px solid #FFC0CB;
+  border-left: 6px solid oklch(50.621% 0.1923 359.222);
 }
 
 section h1 {
-  color: #f8a5b3;
+  color: #c91c6a;
   font-size: 20px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
   font-weight: 900;
 }
 
 section p {
-  color: #665;
-  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
   font-size: 20px;
+}
+
+article p {
+  color: black;
 }
 
 /* Output areas */
 .output {
   background-color: #f7f9fa;
   border: 2px solid #e9ecef;
+  color: black;
   border-radius: 5px;
-  padding: 0rem;
-  margin-top: 0rem;
 }
 
 .output h2 {
   color: #495056;
   font-size: 0.1rem;
-  margin-bottom: 1.75rem;
+  margin-bottom: 10px;
   font-weight: 499;
 }
 
@@ -87,11 +88,11 @@ ul {
 }
 
 ul li {
-  background: black;
-  margin-bottom: 1.5rem;
-  padding: 1.75rem;
+  background: rgb(223, 217, 217);
+  margin-bottom: 10px;
+  padding: 10px;
   border-radius: 3px;
-  border-left: 2px solid #28a745;
+  border-left: 2px solid #f56da6;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   transition: transform 1.2s ease;
 }
@@ -107,26 +108,25 @@ ul li:last-child {
 /* Error message styles */
 #error-messages,
 #broken-array-errors {
-  margin-top: 0rem;
+  margin-top: 3px;
 }
 
 .error-message {
   background-color: #f7d7da;
-  color: #720c24;
-  padding: 1.75rem;
-  border: 0px solid #f5c6cb;
+  color: black;
+  padding: 10px;
+  border: 5px solid #f5c6cb;
   border-radius: 3px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 10px;
   font-family: "Courier New", monospace;
   font-size: 1.9rem;
 }
 
 /* Empty state styles */
 .empty-list {
-  color: #ffdbf7;
+  color: #f299df;
   font-style: italic;
   text-align: center;
-  padding: 0rem;
 }
 
 /* Responsive design */
@@ -136,7 +136,7 @@ ul li:last-child {
   }
 
   header {
-    padding: 0.5rem;
+    padding: 10px;
   }
 
   header h0 {
@@ -144,14 +144,14 @@ ul li:last-child {
   }
 
   section {
-    padding: 0rem;
+    padding: 10px;
   }
 }
 
 /* Code-like styling for technical content */
 code {
   background-color: #e8ecef;
-  padding: 1.25rem 0.5rem;
+  padding: 10px;
   border-radius: 2px;
   font-family: "Courier New", monospace;
   font-size: 1.9rem;
@@ -163,7 +163,7 @@ code {
   color: #f76c98;
   background-color: #d3edda;
   border: 2px solid #c3e6cb;
-  padding: 1.75rem;
+  padding: 10px;
   border-radius: 3px;
-  margin-top: 1.5rem;
+  margin-top: 10px;
 }

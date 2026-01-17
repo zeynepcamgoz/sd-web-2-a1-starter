@@ -18,16 +18,22 @@ const characters = [
 // broken test data for exercise 6
 
 
-// 1. Iterate through the characters array and output each character's name to the console using console.log(). Then, dynamically create <li> elements for each character name and append them to the HTML unordered list element with the id "names-list".
+// 1. Iterate through the characters array and output each character's name to the console using console.log(). 
+// Then, dynamically create <li> elements for each character name and append them to the HTML unordered list element
+//  with the id "names-list".
 const namesList = document.getElementById("names-list");
+
 characters.forEach(character => {
   console.log(character.name);
+
   const li = document.createElement("li");
   li.textContent = character.name;
   namesList.appendChild(li);
 });
 
-// 2. Filter the characters array to find only those characters whose age property is less than 40. Log each filtered character's name to the console. Then, dynamically create <li> elements for each filtered character and append them to the HTML unordered list element with the id "young-characters-list".
+// 2. Filter the characters array to find only those characters whose age property is less than 40. Log each filtered character's
+//  name to the console. Then, dynamically create <li> elements for each filtered character and append them to the HTML unordered 
+// list element with the id "young-characters-list".
 
 const result = characters.filter(character => character.age < 40);
 
@@ -41,7 +47,10 @@ result.forEach(character => {
   ul.appendChild(li);
 });
 
-// 3. Build a reusable function that accepts an array of character objects as a parameter. Inside the function, iterate through the array and extract each character's name property. Dynamically generate <li> elements for each name and append them to a target HTML list element. Call this function with the characters array and render the results in the unordered list with id "function-list".
+// 3. Build a reusable function that accepts an array of character objects as a parameter. Inside the function, 
+// iterate through the array and extract each character's name property. Dynamically generate <li> elements for 
+// each name and append them to a target HTML list element. Call this function with the characters array and render
+//  the results in the unordered list with id "function-list".
 function renderCharacterNames(charactersArray, parameter) {
   const ul = document.getElementById(parameter);
 
@@ -108,9 +117,6 @@ function errorHandler(message, location) {
   em2.appendChild(li);
 
 }
-
-
-
 
 // 6. Create a second array called "brokenCharacters" that intentionally contains objects with missing name properties
 //  (e.g., objects with only id and age). Pass this broken array to your error-handling functions from exercise 5.
